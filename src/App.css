@@ -1,0 +1,288 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 40px;
+  background-color: #007bff;
+  margin-top: 0;
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-container > div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.select-container > div:last-child {
+  margin-right: 0;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.select-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-container button:hover {
+  background-color: #0056b3;
+}
+
+.result-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.result-container p {
+  font-size: 20px;
+  color: #333;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.city-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.city {
+  margin: 20px;
+  text-align: center;
+  width: calc(33.33% - 40px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.city img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.city-info {
+  margin-top: 20px;
+}
+
+.city-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.city-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+.city button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.city button:hover {
+  background-color: #0056b3;
+}
+
+.city button.selected {
+  background-color: #0056b3;
+}
+
+.cop-image {
+  width: 250px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  
+}
+
+.vehicle-select {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.vehicle-select select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.vehicle-select label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.vehicle-select button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vehicle-select button:hover {
+  background-color: #0056b3;
+}
+
+.center-text {
+  text-align: center;
+  margin: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .select-container {
+    flex-direction: column;
+  }
+
+  .select-container > div {
+    margin-bottom: 10px;
+  }
+
+  .vehicle-select {
+    max-width: 100%;
+  }
+
+  .city {
+    width: calc(50% - 40px);
+  }
+}
+.header-link {
+  text-decoration: none;
+  color: inherit; 
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+
+.game-description {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text {
+  max-width: 800px; 
+  padding: 0 20px; 
+  text-align: justify; 
+  line-height: 1.5; 
+  font-size: 18px;
+  color: #333;
+}
+
+.image {
+  margin-top: 20px; 
+}
+
+.image img {
+  max-width: 100%; 
+}
+
+
+/* Media query for mobile view */
+@media (min-width: 768px) {
+  .description-content {
+    flex-direction: row; /* Change flex direction to row for desktop view */
+    justify-content: center; /* Center-align items horizontally */
+  }
+
+  .text {
+    margin-right: 20px; /* Add margin between text and image */
+  }
+}
+
+
